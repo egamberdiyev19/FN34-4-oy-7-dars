@@ -247,7 +247,46 @@ for (let i = 0; i < num38.length; i++) {
   
 }
 console.log(num38);
-// 39-masala
+// 40-masala
+let num40 = [1, 20, 43, 33, 8, 36]
+num40[num40.length/2] = 10,
+console.log(num40)
+// 42-masala
+let num42 = [7, 10, 12, 15, 19]
+let num421 = num42.pop();
+num42.unshift(num421);
+console.log(num42);
+// 43-masala
+let num43 = [5, 17, 12, 14, 11]
+let num431 = num43.shift();
+num43.push(num431);
+console.log(num43);
+// 44-masala
+let num44 = [6, 9, 8, 3]
+let max441;
+let max442;
+if (num44[0] > num44[1]) {
+    max441 = num44[0]
+} else {
+    max441 = num44[1]
+}
+if (num44[2] > num44[3]) {
+    max442 = num44[2]
+} else {
+    max442 = num44[3]
+}
+if (max441 > max44) {
+    console.log(max441)
+} else {
+    console.log(max442)
+}
+
+
+
+
+
+
+
 
 
 
