@@ -91,6 +91,18 @@ for (let i = 0; i < num9.length; i++) {
     sum9 += num9[i]
 }
 console.log(sum9 / num9.length)
+// 10-masala
+let num10 = [10, 32, 16, 52, 41]
+let num101 = num10.reverse()
+console.log(num101);
+// 11-masala
+let num11 = [18, 21, 63, 45, 89]
+let num111 = num11.reverse()
+console.log(num111);
+
+
+
+
 // 12-masala
 let num12 = [3, 7, 2, 9, 6]
 let res12 = []
@@ -115,6 +127,16 @@ for (let i = 0; i < num14.length; i++) {
     
     
 }
+// 15-masala
+let num15 = [20, 51, 29, 49]
+num15.sort()
+console.log(num15);
+//16-masala
+let num16 = [40, 52, 54, 32, 19]
+num16.sort()
+console.log(num16);
+
+
 // 17-masala
 let num17 = [2, 8, 6, 4]
 let res17 = []
@@ -146,9 +168,18 @@ for(let i = 0; i < num20.length; i+=2) {
     
 }
 // O‘rta darajadagi masalalar
+// 21-masala
+let num21 = [10, 25, 54, 63, 95, 87]
+let yarmi21 = Math.floor(num21.length/2);
+let birinchiYarmi = num21.slice(0, yarmi21);
+let ikkinchiYarmi = num21.slice(yarmi21);
+console.log(birinchiYarmi);
+console.log(ikkinchiYarmi);
+
+
 // 22-masala
-let num21 = [4, 5, 12, 15, 2]
-if (num21.length > 10) {
+let num22 = [4, 5, 12, 15, 2]
+if (num22.length > 10) {
     console.log("kop")
 } else {
     console.log("kam");
@@ -166,18 +197,24 @@ let num24 = [5, 12, 23, 41, 11]
 num24.pop();
 num24.unshift(11);
 console.log(num24);
+// 25-masala
+let num25 = [10, 20, 31, 54, 71]
+num25.pop();
+num25.unshift(71);
+console.log(num25);
+
 // 26-masala
-let num25 = [9, 12, 20, 14, 54]
+let num26 = [9, 12, 20, 14, 54]
 num25[1] = '';
 num25[3] = '';
 
-console.log(num25)
+console.log(num26)
 // 27-masala
-let num26 = [21, -8, -23, 45, 41]
-for (let i = 0; i < num26.length; i++) {
-    if (num26[i] < 0) {
-      num26[i] = 0;
-      console.log(num26)
+let num27 = [21, -8, -23, 45, 41]
+for (let i = 0; i < num27.length; i++) {
+    if (num27[i] < 0) {
+      num27[i] = 0;
+      console.log(num27)
     }
 }
 // 28-masala
@@ -199,6 +236,12 @@ for (let i = 0; i < num29.length; i++) {
     }
     
 }
+// 31-masala
+let num31 = [25, 17, 36, 25, 96]
+let num311 = [...new Set(num31)]
+console.log(num311);
+
+
 // 32-masala
 let num32 = [12, 30, 41, 23, 25]
 for(let i = 0; i < num32.length; i++) {
@@ -209,6 +252,15 @@ for(let i = 0; i < num32.length; i++) {
 
     }
 }
+// 33-masala
+let num33 = [28, 78, 65, 93, 24, 67]
+let ortasi33 = Math.floor(num33.length / 2);
+if (num33.length % 2 == 0) {
+    num33.splice(ortasi33 - 1, 2);
+} else {
+    um33.splice(ortasi33, 1)
+}
+console.log(num33);
 // 34-masala
 let num34 = [21, 14, 23, 15]
 num34.push(21);
@@ -246,11 +298,19 @@ for (let i = 0; i < num38.length; i++) {
     }
   
 }
-console.log(num38);
+// 39-masala
+let num39 = [20, 43, 20, 36]
+let num391 = [...new Set(num39)]
+console.log(num391);
+
+
+
 // 40-masala
 let num40 = [1, 20, 43, 33, 8, 36]
 num40[num40.length/2] = 10,
 console.log(num40)
+// 41-masala
+
 // 42-masala
 let num42 = [7, 10, 12, 15, 19]
 let num421 = num42.pop();
@@ -275,11 +335,60 @@ if (num44[2] > num44[3]) {
 } else {
     max442 = num44[3]
 }
-if (max441 > max44) {
+if (max441 > max442) {
     console.log(max441)
 } else {
     console.log(max442)
 }
+// 45-masala
+
+let num45 = [10, 3, 7, 61, 20];
+let minValue = Math.min(...num45);
+let minIndex = num45.indexOf(minValue);
+num45.splice(minIndex, 1);
+console.log(num45);
+// 46-masala
+let num46 = [29, 41, 56, 78];
+let maxValue = Math.max(...num46);
+let maxIndex = num46.indexOf(maxValue);
+num46.splice(maxIndex, 1);
+console.log(num46);
+// 48-masala
+let num48 = [64, 20, 36, 20];
+let num481 = [...new Set(num48)];
+
+console.log(num481);
+// 49-masala
+let num49 = [10, 30, 22, 13, 61, 32];
+let num492 = [];
+let num493 = [];
+let num495 = [];
+for (let num497 of num49) {
+    if (num497 % 2 === 0) {
+        num492.push(num497);  
+    }
+    if (num497 % 3 === 0) {
+        num493.push(num497); 
+    }
+    if (num497 % 5 === 0) {
+        num495.push(num497);  
+    }
+}
+
+console.log( num492);
+console.log( num493);
+console.log( num495);
+// 50-masala
+let num50 = [20, 10, 32, 25];
+for (let i = 0; i < 3; i++) {
+    let num501 = num50.pop();  
+    num50.unshift(num501);    
+}
+
+console.log(num50);
+
+
+
 
 
 
